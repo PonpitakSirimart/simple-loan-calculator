@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titlePro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="สินเชื่อแนะนำ"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="#007468"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="91dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@id/titlePro"
+        android:scaleType="centerInside"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/topicPro"
+        android:layout_below="@+id/titlePro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/imgThumbnail"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        tools:text="Title"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/promoCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topicPro"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/imgThumbnail"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="14sp"
+        tools:text="Promo code:" />
+
+    <TextView
+        android:id="@+id/detailPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promoCode"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/imgThumbnail"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:text="Detail" />
+
+</RelativeLayout>
